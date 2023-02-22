@@ -29,11 +29,11 @@ public class MathController {
     }
 //as an example to multiply 4 times 5, the url would be: http://localhost:8080/multiply/5/and/4
 
-    @GetMapping("/multiply/{num1}/and/{num2}")
+    @GetMapping("/divide/{num1}/and/{num2}")
     @ResponseBody
     public String divide(@PathVariable int num1, @PathVariable int num2) {
         return num1 + " / " + num2 + " = " + (num1 / num2);
     }
-//as an example to divide 2 into 10, the url would be: http://localhost:8080/divide/10/and/2
+//(in this scenario, num1 is the bigger number) as an example to divide 2 into 10, the url would be: http://localhost:8080/divide/10/and/2
 
 }//end MathController
