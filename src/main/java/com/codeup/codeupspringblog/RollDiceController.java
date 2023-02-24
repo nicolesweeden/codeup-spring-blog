@@ -8,15 +8,13 @@ import org.springframework.web.bind.annotation.*;
 public class RollDiceController {
 
     @GetMapping("/roll-dice")
-    @ResponseBody
     public String diceRollGuess() {
-        return "Please guess a number from 1 through 6:";
+        return "RollDiceGuess";
     }
 
     @GetMapping("/roll-dice/n")
-    @ResponseBody
     public String diceRollResult() {
-        return "";
+        return "RollDiceResult";
     }
 
 
