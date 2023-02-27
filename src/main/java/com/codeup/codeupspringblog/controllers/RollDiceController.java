@@ -9,19 +9,19 @@ public class RollDiceController {
 
     @GetMapping("/roll-dice")
     public String diceRollGuess() {
-        return "RollDiceGuess";
+        return "RollDiceIndex";
     }
 
-    @GetMapping("/roll-dice/n")
-    public String diceRollResult() {
-        return "RollDiceResult";
-    }
-
-
-    @PostMapping("/roll-dice")
-    public String diceRoll(@RequestParam(name = "cohort") String cohort, Model model) {
-        model.addAttribute("cohort", "Welcome to " + cohort + "!");
-        return "join";
-    }
+//    @GetMapping("/roll-dice/n")
+//    public String diceRollResult() {
+//        return "RollDiceResult";
+//    }
+//
+//
+//    @PostMapping("/roll-dice")
+//    public String diceRoll(@RequestParam(name = "cohort") String cohort, Model model) {
+//        model.addAttribute("cohort", "Welcome to " + cohort + "!");
+//        return "join";
+//    }
 
 }//end RollDiceController
