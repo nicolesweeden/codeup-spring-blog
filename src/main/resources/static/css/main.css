@@ -17,5 +17,14 @@
 }
 
 * {
-    color: mediumpurple;
+    color: darkmagenta;
+    background-color: lavender;
+}
+
+.form-control {
+    background-color: ghostwhite;
+}
+
+a {
+    color: darkmagenta;
 }
