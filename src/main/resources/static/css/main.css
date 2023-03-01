@@ -3,6 +3,8 @@
 #page-container {
     position: relative;
     min-height: 100vh;
+    align-content: center;
+    text-align: center;
 }
 
 #content-wrap {
@@ -19,6 +21,12 @@
 * {
     color: darkmagenta;
     background-color: lavender;
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+}
+
+a:hover {
+    color: darkorange;
 }
 
 .form-control {
@@ -27,4 +35,39 @@
 
 a {
     color: darkmagenta;
+    font-size: 18px;
 }
+
+.text-center {
+    background-color: ghostwhite;
+}
+
+.text-reset {
+    background-color: ghostwhite;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+p {
+    color: darkmagenta;
+    margin-bottom: 0;
+}
+
+.btn:hover {
+    background-color: darkorange;
+    border: 1px solid darkorange;
+}
+
+.num {
+    color: darkmagenta;
+    font-size: 30px;
+    margin-right: 50px;
+}
+
+span {
+    font-size: 30px;
+}
+

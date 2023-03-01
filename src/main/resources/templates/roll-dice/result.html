@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="partials :: head ('Roll-Dice')">
+</head>
+
+<body>
+
+<div id="page-container">
+    <div id="content-wrap">
+        <nav th:replace="partials :: navbar"></nav>
+    </div>
+
+    <!--    roll dice content -->
+    <h2>Here are your results!</h2>
+    <h3>You guessed: <span th:text="${number}"></span>. The die landed on: <span th:text="${result}"></span>.</h3>
+    <h3 th:if="${number != result}">Womp womp!</h3>
+    <h3 th:if="${number == result}">Winner winner!</h3>
+
+</div>
+
+<footer th:replace="partials :: footer"></footer>
+
+<div th:replace="partials :: boot-scripts"></div>
+
+</body>
+</html>

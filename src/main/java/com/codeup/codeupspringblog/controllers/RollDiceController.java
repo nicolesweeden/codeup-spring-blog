@@ -9,19 +9,16 @@ public class RollDiceController {
 
     @GetMapping("/roll-dice")
     public String diceRollGuess() {
-        return "RollDiceIndex";
+        return "roll-dice/index";
     }
 
-//    @GetMapping("/roll-dice/n")
-//    public String diceRollResult() {
-//        return "RollDiceResult";
-//    }
-//
-//
-//    @PostMapping("/roll-dice")
-//    public String diceRoll(@RequestParam(name = "cohort") String cohort, Model model) {
-//        model.addAttribute("cohort", "Welcome to " + cohort + "!");
-//        return "join";
-//    }
+    @GetMapping("/roll-dice/{number}")
+    public String showResult(@PathVariable int number, Model model) {
+        int result = (int) (Math.random() * 6) + 1;
+        System.out.println((int) 4.9);
+        model.addAttribute("number", number);
+        model.addAttribute("result", result);
+        return "roll-dice/result";
+    }
 
-}//end RollDiceController
+}//end RollDiceController class
