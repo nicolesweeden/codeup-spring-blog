@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 import java.util.List;
 
 @Entity
-@Table(name = "ads") // this annotation is optional
+@Table(name = "ads") //ads table doesn't exist in db yet that's why ads is highlighted
 public class Ad {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -50,6 +50,13 @@ public class Ad {
         this.description = description;
         this.user = user;
     }
+
+//    public Ad(String title, String description, User user, List<Category> categories) {
+//        this.title = title;
+//        this.description = description;
+//        this.user = user;
+//        this.categories = categories;
+//    }
 
     public long getId() {
         return id;
