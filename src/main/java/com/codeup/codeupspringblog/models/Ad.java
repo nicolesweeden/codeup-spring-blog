@@ -19,6 +19,7 @@ public class Ad {
     @JoinColumn(name = "user_id")
     private User user;
 
+//    commented
 //    @ManyToMany(cascade = CascadeType.ALL)
 //    @JoinTable(
 //            name="ads_categories",
