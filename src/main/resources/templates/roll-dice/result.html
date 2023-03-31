@@ -15,7 +15,7 @@
     <h2>Here are your results!</h2>
     <h3>You guessed: <span th:text="${number}" class="result"></span>. The die landed on: <span th:text="${result}" class="result"></span>.</h3>
     <h3 th:if="${number != result}">Womp womp!</h3>
-    <h3 th:if="${number == result}">Winner winner!</h3>
+    <h3 th:if="${number == result}" class="result-win">Winner winner!</h3>
 
 </div>
 
